@@ -33,19 +33,25 @@
 }
 
 .logo { /* TODO Нужно ли использовать див или имг? */
-  width: 183px;
-  height: 32px;
-  background-image: url('../images/logo_place_header.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .logo_place_header {
+  background-image: url(../images/logo_place_header.svg);
+  width: 183px;
+  height: 32px;
   position: absolute;
   top: 30px;
   left: 64px;
   z-index: 2;
+}
+
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+  width: 183px;
+  height: 35px;
 }
 
 .header__title {
@@ -90,6 +96,7 @@
   position: absolute;
   top: 64px;
   right: 0;
+  z-index: 0;
 }
 
 
@@ -146,7 +153,6 @@
   padding: 100px 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -159,6 +165,15 @@
   margin: 0; /* по БЭМ нельзя указывать отступы, но по брифу нельзя создавать новые классы */
 }
 
+.section-title_theme_light {
+
+}
+
+.section-title_theme_dark {
+  color: white;
+  z-index: 1;
+}
+
 .section-subtitle {
   width: 60%;
   text-align: center;
@@ -168,16 +183,46 @@
   margin:20px 0 0; /* по БЭМ нельзя указывать отступы, но по брифу нельзя создавать новые классы */
 }
 
+.section-subtitle_theme_light {
+
+}
+
+.section-subtitle_theme_dark {
+  color: white;
+  z-index: 1;
+}
+
 .table {
   width: 1100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.table_theme_light {
+
+}
+
+.table_theme_dark {
+  z-index: 1;
 }
 
 .table__cell {
   width: 250px;
   margin-top: 60px;
+}
+
+.table__cell_theme_light {
+
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-top: 80px;
 }
 
 .table__heading {
@@ -187,6 +232,14 @@
   font-weight: bold;
 }
 
+.table__heading_theme_light {
+
+}
+
+.table__heading_theme_dark {
+
+}
+
 .table__text {
   margin: 20px 0 0;
   line-height: 1.2;
@@ -194,12 +247,20 @@
   font-weight: normal;
 }
 
+.table__text_theme_light {
+
+}
+
+.table__text_theme_dark {
+
+}
+
 
 /* Block 3. Feynman */
 
 .feynman {
   background-color: #f2f2f2;
-  background-image: url('../images/feynman.png');
+  background-image: url(../images/feynman.png);
   background-position: left bottom;
   background-size: 867px 637px;
   background-repeat: no-repeat;
@@ -240,18 +301,107 @@
 }
 
 
+/* Block 4. Kaufman */
+
+.kaufman {
+  padding: 90px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f1f1f;
+  position: relative;
+  overflow: hidden;
+}
+
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -210px;
+  top: 0;
+}
 
 
+/* Footer */
 
+.footer {
+  background-color: #1f1f1f;
+  box-sizing: border-box;
+  min-height: 350px;
+  height: 1px;
+  padding: 60px 0 40px;
+  color: #fff;
+}
 
+.footer__columns {
+  margin-left: 64px;
+  margin-right: auto;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 
+.footer__column {
 
+}
 
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+.footer__column_content_info {
+
+}
+
+.footer__column_content_social {
+
+}
+
+.footer__author {
+  margin: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column-heading {
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer__column-links {
+  margin: 20px 0 16px;
+  list-style: none;
+  padding: 0;
+}
+
+.footer__column-link {
+  margin-bottom: 16px;
+  display: block;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__column-link:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer__social-icons {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  vertical-align: baseline;
 }
