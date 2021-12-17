@@ -1,20 +1,8 @@
-/* TEMPORARY */
-/*
-* {
-  border: 1px solid red;
-}
-*/
-
-
-
+/* Ниже правила для page, заданные авторами Практикума */
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -26,13 +14,13 @@
   position: relative;
   display: flex;
 
-  /* ниже ограничения на высоту для секции от авторов Практикума */
+  /* Ниже ограничения на высоту для секции от авторов Практикума */
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
 }
 
-.logo { /* TODO Нужно ли использовать див или имг? */
+.logo {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -143,6 +131,8 @@
 }
 
 .two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -162,11 +152,7 @@
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
-  margin: 0; /* по БЭМ нельзя указывать отступы, но по брифу нельзя создавать новые классы */
-}
-
-.section-title_theme_light {
-
+  margin: 0;
 }
 
 .section-title_theme_dark {
@@ -180,11 +166,7 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin:20px 0 0; /* по БЭМ нельзя указывать отступы, но по брифу нельзя создавать новые классы */
-}
-
-.section-subtitle_theme_light {
-
+  margin: 20px 0 0;
 }
 
 .section-subtitle_theme_dark {
@@ -202,10 +184,6 @@
   padding: 0;
 }
 
-.table_theme_light {
-
-}
-
 .table_theme_dark {
   z-index: 1;
 }
@@ -215,13 +193,8 @@
   margin-top: 60px;
 }
 
-.table__cell_theme_light {
-
-}
-
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
   margin-top: 80px;
 }
 
@@ -232,12 +205,8 @@
   font-weight: bold;
 }
 
-.table__heading_theme_light {
-
-}
-
 .table__heading_theme_dark {
-
+  color: #fff;
 }
 
 .table__text {
@@ -247,12 +216,8 @@
   font-weight: normal;
 }
 
-.table__text_theme_light {
-
-}
-
 .table__text_theme_dark {
-
+  color: #fff;
 }
 
 
@@ -346,23 +311,11 @@
   justify-content: space-between;
 }
 
-.footer__column {
-
-}
-
 .footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.footer__column_content_info {
-
-}
-
-.footer__column_content_social {
-
 }
 
 .footer__author {
