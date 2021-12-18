@@ -339,17 +339,12 @@
 }
 
 .footer__column-link {
-  margin-bottom: 16px;
   display: block;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   text-decoration: none;
   color: #fff;
-}
-
-.footer__column-link:last-of-type {
-  margin-bottom: 0;
 }
 
 .footer__social-icons {
