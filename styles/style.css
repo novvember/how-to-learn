@@ -299,18 +299,17 @@
 
 .footer {
   background-color: #1f1f1f;
-  box-sizing: border-box;
   min-height: 350px;
-  height: 1px;
   padding: 60px 0 40px;
   color: #fff;
+  display: flex;
+  box-sizing: border-box;
 }
 
 .footer__columns {
   margin-left: 64px;
   margin-right: auto;
   width: 90%;
-  height: 100%;
   display: flex;
   justify-content: space-between;
 }
