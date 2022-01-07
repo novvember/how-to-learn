@@ -1,0 +1,10 @@
+.cards {
+  width: 920px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* используется для выравнивания нижней сторки по левому краю */
+  column-gap: 100px;
+}
